@@ -1,0 +1,41 @@
+/*Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+:root {
+    background-color: rgb(20, 20, 24);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu NSW ACT Foundation', cursive, sans-serif;
+    color: #fff;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 100px;
+    font-family: 'Edu NSW ACT Foundation', cursive, sans-serif;
+
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
