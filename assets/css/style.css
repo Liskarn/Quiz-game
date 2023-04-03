@@ -33,7 +33,7 @@ h2 {
     font-size: 8rem;
 }
 
-.app {
+.application {
     background: white;
     width: 90%;
     max-width: 600px;
@@ -55,7 +55,7 @@ h2 {
 }
 
 .game h2 {
-    font-size: 18px;
+    font-size: 24px;
     color: black;
 
 }
@@ -79,11 +79,24 @@ h2 {
     color: #fff;
 }
 
+#next-btn {
+    background: blue;
+    color: #fff;
+    font-size: 24px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
 /*Index.html styling*/
 
 .container {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #play-btn {
@@ -100,6 +113,10 @@ h2 {
   border-radius: 4px;
   
 }
+
+#play-btn:hover {
+    transform: scale(1.1);
+}
 footer {
     text-align: center;
     font-size: 2rem;
@@ -109,10 +126,6 @@ footer {
 
 /*Media queries.*/
 
-@media (max-width: 505px) {
-    .choice-container{
-        min-width: 35rem;
-    }
     .heading {
         padding-top: 0px;
         padding-bottom: 80px;
