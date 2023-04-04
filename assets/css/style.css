@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
-body {
-    background-color: rgb(20, 20, 24); 
-}
 
 /*General style for the pages.*/
 
@@ -13,42 +10,28 @@ body {
     padding: 0;
     font-family: 'Edu NSW ACT Foundation', cursive, sans-serif; 
     color: #fff;
-    font-size: 62.5%;
 }
 
-h1 {
-    font-size: 5rem;
-    margin-bottom: 5rem;
-}
-
-h2 {
-    font-size: 3.5rem;
-    margin-bottom: 3.5rem;
-}
+body {
+    background-color: rgb(20, 20, 24);
+}    
 
 .heading{
     text-align: center;
     padding-top: 150px;
     font-family: 'Edu NSW ACT Foundation', cursive, sans-serif;
-    font-size: 8rem;
+    font-size: 50px;
 }
 
 .application {
     background: white;
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     margin: 100px auto 0;
-    border-radius: 10px;
+    border-radius: 60px;
     padding: 30px;
 }
 
-.correct {
-    background: rgb(7, 245, 7);
-}
-
-.incorrect {
-    background: red;
-}
 
 .game {
     padding: 20px 0;
@@ -60,8 +43,10 @@ h2 {
 
 }
 
+/*Button styling in game*/
+
 .btn {
-    background: #fff;
+    background: white;
     color: #222;
     width: 100%;
     border: 1px solid #222;
@@ -72,16 +57,21 @@ h2 {
     cursor: pointer;
     transition: all 0.3s;
     font-size: 24px;
+    font-weight: 600;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #222;
     color: #fff;
 }
 
+.btn:disabled {
+    cursor: no-drop;
+}
+
 #next-btn {
-    background: blue;
-    color: #fff;
+    background: rgb(20, 20, 24);
+    color: white;
     font-size: 24px;
     width: 150px;
     border: 0;
@@ -90,6 +80,7 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+    font-weight: 600;
 }
 
 /*Index.html styling*/
@@ -100,8 +91,8 @@ h2 {
 }
 
 #play-btn {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: rgb(20, 20, 24);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -111,6 +102,7 @@ h2 {
   height: 35px;
   margin: auto;
   border-radius: 4px;
+  font-weight: 600;
   
 }
 
@@ -124,17 +116,12 @@ footer {
     padding-top: 200px;
 }
 
-/*Media queries.*/
+/*applied styles to correct and incorrect for buttons*/
 
-    .heading {
-        padding-top: 0px;
-        padding-bottom: 80px;
-        
-    }
-    footer {
-        font-size: 1.5rem;
-        bottom: 0px;
-        position: fixed;
-    }
+.correct {
+    background-color: rgba(23, 100, 16, 0.959);
 }
 
+.incorrect {
+    background-color: rgba(247, 9, 9, 0.479);
+}
