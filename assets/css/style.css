@@ -1,52 +1,80 @@
-/*Google fonts import */
-
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
-
-/*General style for the pages.*/
-
-*{
+/* General styles for the pages */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Edu NSW ACT Foundation', cursive, sans-serif; 
+    font-family: 'Edu NSW ACT Foundation', cursive, sans-serif;
     color: #fff;
 }
 
 body {
     background-color: rgb(20, 20, 24);
-}    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-.heading{
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: auto;
+    background-color: #222; /* Change the background color for more contrast */
+    padding: 20px;
+    color: #fff;
+}
+
+/* Heading styles */
+.heading {
     text-align: center;
     padding-top: 150px;
-    font-family: 'Edu NSW ACT Foundation', cursive, sans-serif;
     font-size: 50px;
 }
 
+/* Application container styles */
 .application {
-    background: white;
+    background: #fff;
     width: 80%;
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 60px;
     padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Game section styles */
 .game {
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #222;
+    color: #fff; 
+    margin-bottom: 10px;
+  }
+
+/* Question styles */
 .game h2 {
     font-size: 24px;
-    color: black;
-
+    color: #000;
 }
 
-/*Button styling in game*/
-
+/* Answer button styles */
 .btn {
-    background: white;
+    background: #fff;
     color: #222;
     width: 100%;
     border: 1px solid #222;
@@ -69,9 +97,10 @@ body {
     cursor: no-drop;
 }
 
+/* Next button styles */
 #next-btn {
-    background: rgb(20, 20, 24);
-    color: white;
+    background: #141418;
+    color: #fff;
     font-size: 24px;
     width: 150px;
     border: 0;
@@ -83,45 +112,45 @@ body {
     font-weight: 600;
 }
 
-/*Index.html styling*/
-
+/* Container section styles */
 .container {
     text-align: center;
     margin-top: 200px;
 }
 
+/* Play button styles */
 #play-btn {
-  background-color: white;
-  color: rgb(20, 20, 24);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 24px;
-  width: 80px;
-  height: 35px;
-  margin: auto;
-  border-radius: 4px;
-  font-weight: 600;
-  
+    background-color: #fff;
+    color: #141418;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    width: 80px;
+    height: 35px;
+    margin: auto;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
 #play-btn:hover {
     transform: scale(1.1);
 }
-footer {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    padding-top: 200px;
-}
 
-/*applied styles to correct and incorrect for buttons*/
-
+/* Correct answer styles */
 .correct {
     background-color: rgba(23, 100, 16, 0.959);
 }
 
+/* Incorrect answer styles */
 .incorrect {
     background-color: rgba(247, 9, 9, 0.479);
 }
+
+/* Meassages */
+
+#error-message {
+    color: #f44336;
+    margin-bottom: 10px;
+  }
